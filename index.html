@@ -16,7 +16,7 @@
     <h1>ねぎらいの言葉</h1>
     <label for="inputText">ねぎらいの言葉をかけてね:</label>
     <input type="text" id="inputText" oninput="generateRandomResponse()">
-    <p id="response">ここに返信が表示されます。</p>
+    <p id="response">ここに感謝の言葉が表示されます。</p>
 
     <script>
         function generateRandomResponse() {
@@ -35,7 +35,7 @@
             const randomResponse = responses[randomIndex];
 
             const responseElement = document.getElementById('response');
-            responseElement.textContent = `入力されたテキスト: "${inputText}"\nランダムな返信: ${randomResponse}`;
+            responseElement.textContent = 感謝の言葉: ${randomResponse}`;
         }
     </script>
 </body>
