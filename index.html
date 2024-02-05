@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ねぎらいの言葉</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ねぎらいの言葉</h1>
+    <label for="inputText">ねぎらいの言葉をかけてね:</label>
+    <input type="text" id="inputText" oninput="generateRandomResponse()">
+    <p id="response">ここにランダムな返信が表示されます。</p>
+
+    <script>
+        function generateRandomResponse() {
+            const responses = [
+                "浅すぎ。",
+                "真剣に労え。",
+                "わかった口をきくな。",
+                "仕事をしろ。",
+                "脳なしだろ。",
+                "笑わせんな。",
+                "口くせぇ"
+            ];
+
+            const inputText = document.getElementById('inputText').value;
+            const randomIndex = Math.floor(Math.random() * responses.length);
+            const randomResponse = responses[randomIndex];
+
+            const responseElement = document.getElementById('response');
+            responseElement.textContent = `入力されたテキスト: "${inputText}"\nランダムな返信: ${randomResponse}`;
+        }
+    </script>
+</body>
+</html>
