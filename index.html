@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ねぎらいの言葉</title>
+<!--     <title>ねぎらいの言葉</title> -->
+    <title>田島君へ</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,21 +14,23 @@
     </style>
 </head>
 <body>
-    <h1>ねぎらいの言葉</h1>
-    <label for="inputText">ねぎらいの言葉をかけてね:</label>
+<!--     <h1>ねぎらいの言葉</h1> -->
+    <h1>田島君へ</h1>
+<!--     <label for="inputText">ねぎらいの言葉をかけてね:</label> -->
+    <label for="inputText">賞与効果のエクセル送ってくれるかな？:</label>
     <input type="text" id="inputText" oninput="generateRandomResponse()">
-    <p id="response">ここに感謝の言葉が表示されます。</p>
+    <p id="response"></p>
 
     <script>
         function generateRandomResponse() {
             const responses = [
-                "浅すぎ。",
-                "真剣に労え。",
-                "わかった口をきくな。",
-                "仕事をしろ。",
-                "脳なしだろ。",
-                "笑わせんな。",
-                "口くせぇ"
+                // "浅すぎ。",
+                // "真剣に労え。",
+                // "わかった口をきくな。",
+                // "仕事をしろ。",
+                "脳なしだろ。賞与考課送れ",
+                "笑わせんな。賞与考課送れ",
+                "口くせぇ。賞与考課送れ"
             ];
 
             const inputText = document.getElementById('inputText').value;
@@ -35,7 +38,7 @@
             const randomResponse = responses[randomIndex];
 
             const responseElement = document.getElementById('response');
-            responseElement.textContent = `感謝の言葉: ${randomResponse}`;
+            responseElement.textContent = `田島君へ: ${randomResponse}`;
         }
     </script>
 </body>
